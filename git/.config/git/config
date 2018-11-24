@@ -1,0 +1,38 @@
+# This is Git's per-user configuration file.
+[user]
+	name = AK
+	email = ak@redchan.it
+	signingkey = C20F270730252569BAC5534B78206670C19D1580
+	username = AK
+[commit]
+	gpgSign = true
+[tag]
+	forceSignAnnotated = true
+[protocol "keybase"]
+	allow = always
+[filter "lfs"]
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+[color]
+	ui = always
+[diff]
+	colorMoved = dimmed_zebra
+    tool = vimdiff
+	submodule = log
+[difftool]
+    prompt = false
+[gpg]
+    program = gpg
+[core]
+	autocrlf = input
+	safecrlf = true
+	editor = vim
+    pager = vimpager
+	symlinks = true
+[alias]
+	last = log -1 HEAD
+	co = checkout
+[credential]
+	helper = cache

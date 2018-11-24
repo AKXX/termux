@@ -1,0 +1,36 @@
+#!$ ( type -p bash )
+
+
+#################
+#               #
+#  ▄       ▗▖ ▄▖#
+# ▐█▌      ▐▌▐▛ #
+# ▐█▌      ▐▙█  #
+# █ █      ▐██  #
+# ███      ▐▌▐▙ #
+#▗█ █▖     ▐▌ █▖#
+#▝▘ ▝▘     ▝▘ ▝▘#
+#               #
+#               #
+#################
+
+# Author: A K <ak@redchan.it>
+# Source: https://github.com/AKXX/termux.git
+
+
+
+echo "Please visit this page and enable less secure apps to read and send emails. https://myaccount.google.com/lesssecureapps "
+
+
+read -p 'Press enter when you are done...'
+
+echo -n "Enter your gmail username and press enter: "
+read -r username
+echo -n "Enter your gmail password: "
+read -s password
+
+echo "set imap_user = '$username'" >> ~/.config/mutt/muttrc
+echo "set imap_pass = '$password'" >> ~/.config/mutt/muttrc
+echo "set smtp_pass = '$password'" >> ~/.config/mutt/muttrc
+echo "set smtp_url = smtps://'$username'@smtp.gmail.com" >> ~/.config/mutt/muttrc
+

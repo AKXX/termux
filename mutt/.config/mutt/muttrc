@@ -1,0 +1,23 @@
+#################
+#               #
+#  ▄       ▗▖ ▄▖#
+# ▐█▌      ▐▌▐▛ #
+# ▐█▌      ▐▙█  #
+# █ █      ▐██  #
+# ███      ▐▌▐▙ #
+#▗█ █▖     ▐▌ █▖#
+#▝▘ ▝▘     ▝▘ ▝▘#
+#               #
+#               #
+#################
+
+# Author: A K <ak@redchan.it>
+# Source: https://github.com/AKXX/termux.git
+
+
+
+ set folder = imaps://imap.gmail.com/
+ set spoolfile = +INBOX
+ set record = "+[Gmail]/Sent Mail"
+ set postponed = "+[Gmail]/Drafts"
+ set record=""
