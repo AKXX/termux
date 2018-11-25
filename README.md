@@ -70,7 +70,8 @@ This will symlink files to `~/.config/mutt` and various other places.
 I use minimalist apps even on my powerful machines. One of the example is my mail setup. I use mutt for daily mail usage. I don't use google mail, just added this configuration for termux users so they can also enjoy it. Just do these steps and you'll be okay to use mail in your terminal.
 First of all you have to enable [less secure apps](https://myaccount.google.com/lesssecureapps) in your google account.
 
-- `git clone https://github.com/AKXX/termux.git ~/.cfg && cd $_`
+- `git clone https://github.com/AKXX/termux.git ~/.cfg`
+- `cd ~/.cfg`
 - `pkg install mutt`
 - `pkg install stow`
 - `stow mutt`
